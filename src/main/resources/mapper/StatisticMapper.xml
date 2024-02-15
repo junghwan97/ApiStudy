@@ -5,9 +5,9 @@
 
 <mapper namespace="com.devfun.settingweb_boot.dao.StatisticMapper">
 
-    <select id="selectYearLogin" parameterType="string" resultType="hashMap">
+    <select id="selectYearLogin" parameterType="String" resultType="hashMap">
         select count(*) as totCnt
-        from statistc.requestinfo ri
+        from requestInfo ri
         where left(ri.createDate, 2) = #{year};
     </select>
 

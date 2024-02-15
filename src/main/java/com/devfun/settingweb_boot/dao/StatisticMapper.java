@@ -7,5 +7,4 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface  StatisticMapper {
     public HashMap<String, Object> selectYearLogin(String year);
-
 }
